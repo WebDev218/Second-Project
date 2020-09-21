@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Design</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- CSS Reset downloaded from https://necolas.github.io/normalize.css/ -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mako">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	<div class="width-wrapper">
+		<header class="clearfix">
+			<h1 class="main-heading">Student Name</h1>		
+			<nav class="main-nav">
+				<ul>
+					<li class="main-nav-list"><a href="#" class="main-nav-link">Home</a></li>
+					<li class="main-nav-list"><a href="#portfolio" class="main-nav-link">Portfolio</a></li>
+					<li class="main-nav-list"><a href="#skills" class="main-nav-link">Skills</a></li>
+					<li class="main-nav-list"><a href="#contact-details" class="main-nav-link">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-content">
+			<section class="intro">
+				<h2 style="display: none;">student</h2>
+				<img src="images/responsive-layout-profile.png" class="intro-image" alt="Student Profile Pic">
+				<p class="intro-content">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>				
+			</section>
+			
+			<div class="portfolio-wrapper">
+				<section class="projects clearfix" id="portfolio">
+					<h2 class="section-header">Portfolio</h2>
+
+					<div class="grid"> 
+						<article class="tile">
+							<img src="images/portfolio-1.png" class="tile-image" alt="Marketing Page">
+							<h3 class="tile-title">Marketing Page</h3>
+							<p class="tile-content">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/portfolio-2.png" class="tile-image" alt="Search Page">
+							<h3 class="tile-title">Search Page</h3>
+							<p class="tile-content">This project searches through a specific database to find information that the user is trying to look up.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/portfolio-3.png" class="tile-image" alt="Travel App">
+							<h3 class="tile-title">Travel App</h3>
+							<p class="tile-content">This project compares travel times based on different transportation methods and tells you the best one.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/portfolio-4.png" class="tile-image" alt="Map Of Favourite Spots">
+							<h3 class="tile-title">Map of Favorite Spots</h3>
+							<p class="tile-content">This project uses mapping apis to plot points for my favorite sports in the city for a do-it-yourself walking tour.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/portfolio-5.png" class="tile-image" alt="Photo Gallery">
+							<h3 class="tile-title">Photo Gallery</h3>
+							<p class="tile-content">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/portfolio-6.png" class="tile-image" alt="Calculator">
+							<h3 class="tile-title">Calculator</h3>
+							<p class="tile-content">Someone can enter in the numbers they wan, and press the big blue button and get the result.</p>
+						</article>
+					</div> <!-- end of grid -->
+				</section> <!-- end of portfolio -->
+
+				<section class="my-skills clearfix" id="skills">
+					<h2 class="section-header">Skills</h2>
+
+					<div class="grid">
+						<article class="tile">
+							<img src="images/html5.png" class="tile-image" alt="HTML 5">
+							<h3 class="tile-title">HTML 5</h3>
+							<p class="tile-content">HTML5 is a markup language used for structuring and presenting content on the World Wide Web.</p>
+						</article>
+
+						<article class="tile">
+							<img src="images/css3.png" class="tile-image" alt="CSS">
+							<h3 class="tile-title">CSS</h3>
+							<p class="tile-content">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+						</article>
+
+
+						<article class="tile">
+							<img src="images/javascript.png" class="tile-image" alt="Javascript">
+							<h3 class="tile-title">Javascript</h3>
+							<p class="tile-content">Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications.</p>
+						</article>
+					</div> <!-- End of skills grid -->
+				</section><!-- End of skills -->
+			</div> <!-- End of wrapper-->
+
+
+
+			<section class="contact" id="contact-details">
+				<h3 class="contact-title">Contact</h3>
+				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+				<p>Phone&nbsp;&nbsp;&nbsp;<span class="emphasize">+1 (111) 555-1234</span></p>
+				<p>Email&nbsp;&nbsp;&nbsp;<span class="emphasize">email@yoursite.com</span></p>
+			</section>
+		</main>
+
+	
+	<footer class="main-footer clearfix">		
+		<h4 class="footer-title">Student name</h4>
+
+		<nav class="footer-nav">
+			<ul>			
+				<li class="footer-nav-list mobile-vis"><a href="#" class="footer-nav-link">Back To Top</a></li>
+				<li class="footer-nav-list tablet-vis desktop-vis"><a href="#" class="footer-nav-link">Home</a></li>
+				<li class="footer-nav-list tablet-vis desktop-vis"><a href="#portfolio" class="footer-nav-link">Portfolio</a></li>
+				<li class="footer-nav-list tablet-vis desktop-vis"><a href="#skills" class="footer-nav-link">Skills</a></li>
+				<li class="footer-nav-list tablet-vis desktop-vis"><a href="#contact-details" class="footer-nav-link">Contact</a></li>
+			</ul>
+		</nav>		
+	</footer>
+	</div> <!-- Wrapper End -->
+</body>
+</html>

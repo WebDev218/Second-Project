@@ -1,0 +1,242 @@
+
+/* =================== Base Element Styles =================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Mako, helvetica;	
+	font-size: 17px;
+	line-height: 1.5em;
+	text-align: center;
+	color: rgb(148, 127, 127);
+	background-color: rgb(250, 250, 250); /* Found with color picker */	
+}
+
+h1,h2,h3,h4 {
+	color: rgb(74,74,74);	
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	color: black;
+	padding: 1px 1px; /* to fix collapsing header*/	
+}
+
+footer {	
+	text-align: center;
+	max-width: 1150px;		
+	margin: 70px auto 30px auto;
+
+}
+
+/* =================== Base Class styles =================== */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.width-wrapper {
+	width: 90%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.main-content {
+	
+}
+
+.main-heading {
+	font-size: 1.8em;	
+	color: rgb(74,74,74);
+	padding: 1px;
+	margin-top: 0.75em;	
+}
+
+/* =================== Main Nav Styles =================== */
+
+.main-nav-link {
+ 	padding: 1em 0; 	
+	font-size: 1.2em;
+ 	text-decoration: none; 	
+ 	color: rgb(74,74,74);
+ 	display: inline-block;
+	font-weight: 800;
+	text-transform: uppercase;
+ }
+
+.intro {
+	margin-top: 3.5em;
+}
+
+.portfolio-wrapper {
+	background-color: white;	
+}
+
+.section-header {
+	text-transform: uppercase;
+	font-size: inherit;
+	font-weight: 700;
+	padding-top: 4em;
+	margin-bottom: 1.2em;
+}
+
+.tile {
+	width: 100%;
+	float:left;
+	margin: 1em 0;
+}
+
+.contact {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+
+
+/* =================== Footer Styles =================== */
+
+.main-footer {	
+	border-top: rgb(231, 231, 231) 2px solid;
+}
+
+.footer-title {
+	display: inline;
+	margin-top: 20px;	
+	float: left;	
+}
+
+.footer-nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+
+.footer-nav-link {	
+ 	text-decoration: none; 	
+ 	color: rgb(74,74,74);
+ 	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;	
+	float: left;
+	padding: 20px 0px;	
+	margin: 0;		
+}
+
+
+/* =================== Visibility controls =================== */
+.mobile-vis {
+	display: initial;
+}
+
+.tablet-vis {
+	display: none;
+} 
+
+.desktop-vis {
+	display: none;
+}
+
+/* =================== Doodads =================== */
+
+.emphasize {
+	font-weight: 700;
+}
+
+/* =================== Media Queries =================== */
+
+@media (min-width: 768px) {  /* Tablet View */
+	.mobile-vis {
+		display: none;
+	}
+
+	.tablet-vis {
+		display: initial;
+	} 
+
+	.desktop-vis {
+		display: initial;
+	}
+
+	.main-nav-list {
+		display: inline;
+		padding: 0 1em;
+	}
+
+	.intro {
+		overflow: hidden; /* Stops the top margin collapsing*/ 		
+	}
+
+	.intro-image {
+		float: right;
+		max-width: 30%;
+	}
+
+	.intro-content {
+		max-width: 60%;		
+		text-align: left;
+		float: left;
+	}
+
+	.projects {
+		clear: both;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 49% 49%; 
+		grid-column-gap: 2%;
+	}
+
+	.footer-nav-link {				
+		margin-left: 20px;
+	}
+
+}
+
+@media (min-width: 1024px) { /* Desktop View */
+	.grid {
+		display: grid;
+		grid-template-columns: 32% 32% 32%;
+		grid-column-gap: 2%
+	}
+
+	.intro-image {
+		float: right;
+		max-width: 40%;
+	}
+
+	.intro-content {
+		max-width: 50%;				
+	}
+
+	.main-heading {
+		vertical-align: center;
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav-link {
+		padding: 0;
+	}
+
+	header {
+		padding-top: 2em;
+	}
+
+}
